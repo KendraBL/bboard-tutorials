@@ -17,7 +17,7 @@ Set the colour of the Neopixel strip.
 
 ```blocks
 basic.forever(function(){
-    strip.showColor(neopixel.colors(NeoPixelColours.Purple))
+    strip.showColor(neopixel.colors(NeoPixelColors.Purple))
 })
 ```
 
@@ -27,7 +27,7 @@ To make the Neopixels flash we will add  four more blocks to create the flash cy
 
 ```blocks
 basic.forever(function(){
-    strip.showColor(neopixel.colors(NeoPixelColours.Purple))
+    strip.showColor(neopixel.colors(NeoPixelColors.Purple))
     basic.pause(1000)
     strip.clear()
     strip.show()
@@ -45,5 +45,22 @@ Give the .hex file a name. Click ``|Download|`` to transfer (flash) your code to
 
 To change the flash rate, experiment with different time intervals in the ``||Basic.pause||`` block.
 
+## Challenge
+
+Can you make the NeoPixel strip flash between two different colours?
+
+## Challenge Solution (Example)
+
+To make the NeoPixel strip flash different colours we need to adjust the code in Step 2 slightly. 
+
+```blocks
+basic.forever(function(){
+    strip.showColor(neopixel.colors(NeoPixelColors.Purple))
+    basic.pause(1000)
+    strip.showColor(neppixel.colors(NeoPixelColors.Yellow))
+    strip.show()
+    basic.pause(1000)
+})
+```
 ## 
 Excellent, you're ready to continue onto the next NeoPixel tutorial!
