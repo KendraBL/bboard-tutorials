@@ -21,7 +21,7 @@ strip = neopixel.create(DigitalPin.P2, 30, NeoPixelMode.RGB)
 ## Step 3: Code the NeoPixel Strip
 
 Code the NeoPixel Strip on the b.board to display a singular colour from the drop down menu. 
-Select the ``||strip.showColor(neopixel.colors(NeoPixelColours.Red))||`` from the NeoPixel dashboard and place it in the ``||basic.forever||`` block.
+Select the ``||strip.showColor(neopixel.colors(NeoPixelColors.Red))||`` from the NeoPixel dashboard and place it in the ``||basic.forever||`` block.
 
 In this example, the NeoPixel strip will display the colour purple on each NeoPixel.
 
