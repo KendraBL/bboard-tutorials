@@ -23,15 +23,19 @@ basic.forever(function(){
 
 ## Step 2: Programming the Neopixel Strip to Flash 
 
-To make the Neopixels flash we will add the ``||Basic.pause||`` block and set the time interval to 500ms.
+To make the Neopixels flash we will add  four more blocks to create the flash cycle. First, add the ``||Basic.pause||`` block and set the time interval to 1000ms. Then add the ``||Neopixel.clear||`` and ``||Neopixel.show||`` blocks. Last add in another ``||Basic.pause||`` block and set the interval to 1000ms. 
 
 ```blocks
 basic.forever(function(){
     strip.showColor(neopixel.colors(NeoPixelColours.Purple))
-    basic.pause(500)
+    basic.pause(1000)
+    strip.clear()
+    strip.show()
+    basic.pause(1000)
 })
 ```
-This will make the Neopixel strip blink on and off.
+
+This will program the Neopixels to flash on and off in a 1 second (1000ms) interval.
 
 ## Step 3: Flash the Microbit with the .hex file
 
@@ -39,7 +43,7 @@ Give the .hex file a name. Click ``|Download|`` to transfer (flash) your code to
 
 ## Step 4: Changing the Flash Rate
 
-To change the Flash rate, experiment with different time intervals in the ``||Basic.pause||`` block.
+To change the flash rate, experiment with different time intervals in the ``||Basic.pause||`` block.
 
 ## 
 Excellent, you're ready to continue onto the next NeoPixel tutorial!
